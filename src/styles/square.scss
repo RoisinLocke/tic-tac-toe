@@ -1,0 +1,13 @@
+@import './variables.scss';
+
+.square {
+    height: 60px;
+    width: 60px;
+    margin: 2px;
+    padding: 0;
+    float: left;
+    background: $textcolor;
+    color: $secondarycolor;
+    @include font;
+} 
+

@@ -1,5 +1,5 @@
 @import 'variables.scss';
-@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Modak');
+
 
 
 .home {
@@ -13,8 +13,7 @@
     margin: 0;
     padding-top: 40vh;
     color: $textcolor;
-    font-family: 'Modak', cursive;
-    font-weight: 100;
+    @include font;
 }
 
 .home__cta {
