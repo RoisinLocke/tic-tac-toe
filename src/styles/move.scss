@@ -1,7 +1,12 @@
 @import './variables.scss';
 
+.move__show {
+    margin: 2rem 0 1rem;
+    @include cta;
+}
+
 .move__header {
-    margin: 2rem 0 0 0;
+    margin: 1rem 0 0 0;
     color: $textcolor;
     @include font;
 }
@@ -20,9 +25,5 @@
 }
 
 .movecard__button {
-    height: 30px;
-    width: 120px;
-    background-color: $textcolor;
-    border-radius: 10px;
-    @include secondFont;
+    @include cta;
 }

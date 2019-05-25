@@ -1,29 +1,31 @@
 import React, { Component } from 'react';
+import MoveHistory from './MoveHistory';
 import MoveCard from './MoveCard';
 import '../styles/move.scss';
 
 export default class Move extends Component {
+
+  state = {
+    show: false
+  }
+
+  showMoves = (e) => {
+    this.setState({
+      show: !this.state.show
+    })
+    console.log(this.state.show)
+  }
+
   render() {
-    let {history} = this.props;
-
-    const moves = history.map((step, move) => {
-      const description = move ?
-        'Go to move #' + move :
-        'Go to game start';
-
-        return (
-          <MoveCard 
-            onClick = {() => this.props.onClick(move)}
-            description = {description}
-            key = {move}
-          />
-        )
-    });
 
     return (
       <>
-        <h3 className="move__header">Move History</h3>
-        <ul className="move__list">{moves}</ul>
+        <button className = "move__show" onClick={this.showMoves}>Show Move History</button>
+        < MoveHistory 
+          show = {this.state.show}
+          history = {this.props.history}
+          onClick = {this.props.onClick}
+        />
       </>
     )
     

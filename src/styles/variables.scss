@@ -15,3 +15,11 @@ $textcolor: #ffffff;
     font-family: 'Ubuntu', sans-serif;
     font-size: 10px;
 }
+
+@mixin cta {
+    height: 30px;
+    width: 120px;
+    background-color: $textcolor;
+    border-radius: 10px;
+    @include secondFont;
+}
