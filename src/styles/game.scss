@@ -1,7 +1,7 @@
 @import 'variables.scss';
 
 .game {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     background: $maincolor;
     background: linear-gradient(180deg, $maincolor 40%, $secondarycolor 60%);

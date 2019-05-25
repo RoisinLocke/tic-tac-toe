@@ -21,7 +21,10 @@ export default class Move extends Component {
     });
 
     return (
+      <>
+        <h3 className="move__header">Move History</h3>
         <ul className="move__list">{moves}</ul>
+      </>
     )
     
   }

@@ -40,12 +40,3 @@ export default class Board extends Component {
           </section>
         )
 }}
-
-/* TO DO
-- Cant re-click a square once its been clicked 
-- Responsive
-- Moves component
-- Moves styling
-- Animation for winner - modal?
-- Change to responding to 'x' vs 'o' on keyboard rather than click
-*/

@@ -1,6 +1,28 @@
 @import './variables.scss';
 
+.move__header {
+    margin: 2rem 0 0 0;
+    color: $textcolor;
+    @include font;
+}
+
 .move__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     list-style: none;
-    padding: 0;
+    margin: 0;
+    padding: 1rem 0 2rem;
+}
+
+.movecard__item {
+    padding: 0.5rem 0;
+}
+
+.movecard__button {
+    height: 30px;
+    width: 120px;
+    background-color: $textcolor;
+    border-radius: 10px;
+    @include secondFont;
 }

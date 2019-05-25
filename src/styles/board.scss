@@ -1,8 +1,8 @@
 @import './variables.scss';
 
 .board__status {
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin: 0;
+    padding: 2rem 0;
     color: $textcolor;
     @include font;
 }
@@ -14,8 +14,8 @@
     justify-content: center;
 }
 
-.board-row:after {
-    clear: both;
-    content: "";
-    display: table;
-  }
+// .board-row:after {
+//     clear: both;
+//     content: "";
+//     display: table;
+//   }
